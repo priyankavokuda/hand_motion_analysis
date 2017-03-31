@@ -1,12 +1,12 @@
-#This program finds the hand pose given joint angles of the hand.
+# This program finds the hand pose given joint angles of the hand.
 
-#Dependencies
+# Dependencies
 
-Python 2.7
+*Python 2.7
 
-scikit-learn: http://scikit-learn.org/stable/install.html
+*scikit-learn: http://scikit-learn.org/stable/install.html
 
-#Usage
+# Usage
 
 Run "prepareTrainingData.py" when you have new training data. New training data should be in "transport-controlled" folder.
 
@@ -17,6 +17,11 @@ Run "learnHandMotion.py" for classification of data which are not annotated.
 "learnHandMotion.py" reads training data from "data" folder and testing data from "transport-controlled-notannotated" or "transport-uncontrolled" folders. It performs dimentionlity reduction using pca, uses svm to train and get classification of the data. It lso converts data to timeseries.
 
 PCA and SVM are done using scikit-learn machine learning library.
+
+# Results
+
+
+![](https://github.com/priyankavokuda/priyankavokuda.github.io/blob/master/images/handmotion.gif)
 
 
 Credits to: 
