@@ -1,4 +1,4 @@
-# Hand Motion analysis.
+# Hand motion analysis
 
 This project was performed to compare performance computer vision methods and machine learning methods on same data in-order to find efficient methods to assign labels to unseen/unlabeled data .
 
