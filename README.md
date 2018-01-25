@@ -1,4 +1,18 @@
-# This program finds the hand pose given joint angles of the hand.
+# Hand Motion analysis.
+
+This project was performed to compare performance computer vision methods and machine learning methods on same data in-order to find efficient methods to assign labels to unseen/unlabeled data .
+
+In this project, classification of hand pose is performed using supervised machine learning method on labeled data.
+
+The input to the system are joint angles of a hand which is moved under controlled conditions recorded by CyberGlove.
+
+The the number of joint angles in a hand is too high and the joint angles are interdependent. So dimensionality reduction is performed using Principle Component Analysis.
+
+As the data is recorded at equally spaced time intervals, it is treated as timeseries data by combining 'n' consecutive data recordings into one reading.
+
+At the end classification is performed using Support Vector Machines.
+
+The method compares favorably against computer vision methods by ∼9 % points with classification accuracy of 98.08 % with 10-way cross validation. It was found that dimensionality reduction and treating data as timeseries contributed to increase in performance.
 
 # Dependencies
 
